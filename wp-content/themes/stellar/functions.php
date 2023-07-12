@@ -1,7 +1,6 @@
 <?php
 
-foreach ( glob( get_theme_file_path() . '/inc/*.php' ) as $file ) {
+foreach (glob(get_theme_file_path() . '/inc/*.php') as $file) {
 
-require_once $file;
+    require_once $file;
 }
-?>

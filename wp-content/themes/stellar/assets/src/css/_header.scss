@@ -1,0 +1,98 @@
+@import 'config';
+.header{
+    display: flex;
+    flex-direction: row;
+    background-color: $primary-color;
+    padding-bottom: 24px;
+    width: 100vw;
+    justify-content: space-around; 
+    padding-top: 25px;
+    @include sticky;
+    @include desktop{
+        justify-content: space-evenly;
+        padding-top: 50px;
+    }
+
+    &__logo{
+        width: 50%;
+        display: inline-flex;
+        justify-content: flex-start;
+
+        @include desktop{
+            display: block;
+            width: auto;
+            margin: auto 0;
+        }
+            img{
+                width: 150px;
+            }
+        
+    }
+    &__nav{
+        width: 60%;
+        margin:auto 0;
+        display: none;
+        @include desktop{
+            display: inline-flex;
+            .nav-menu{
+                display: flex;
+                list-style: none;
+                box-sizing: inherit;
+
+
+                    ul{     
+                        display: inline-flex;
+                        list-style-type: none;
+                        align-items: flex-start;
+                        gap: 34.241px;
+
+                        li{
+                            
+                            a{
+                                @include navtext;
+                            }
+        
+                        }
+                    }
+                    
+            
+                }
+            }
+        }
+    &__right-side{
+        display: none;
+           
+        @include desktop
+        {   
+
+            display: inline-flex;
+            color:black;
+            display: inline-flex;
+            padding-left: 0px;
+            justify-content: flex-end;
+            align-items: center;   
+        }
+
+        a {
+            display: block;
+            margin: auto;
+            @include navtext;
+
+        }
+        .try_button{
+            margin-left: 2em;
+            border-radius: 8px;
+            border: 1px solid #FFF;
+            background: #06F; 
+            padding: 9px 17px;  
+            @include buttontext
+        }
+    }
+    &__show-mobile{
+        display: inline-flex;
+        margin: auto 0;
+        @include desktop{
+            display: none;
+        }
+    }
+}

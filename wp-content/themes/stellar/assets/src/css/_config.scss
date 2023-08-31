@@ -1,43 +1,101 @@
-@mixin navtext{
+$primary-color: #111926;
+
+
+
+
+
+@mixin navtext {
     color: #D4E0E7;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
-    line-height: 25.6px; 
+    line-height: 25.6px;
     letter-spacing: 1px;
-    width:auto;
+    width: auto;
     text-decoration: none;
+    
 
 
 }
-@mixin buttontext{
+
+@mixin slideDown($duration: 0.5s, $delay: 0s) {
+    animation: slideDown $duration ease-in-out $delay forwards;
+    transform: translateY(-100%);
+}
+
+@keyframes slideDown {
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@mixin buttontext {
     color: #D4E0E7;
     text-align: center;
     font-family: Roboto;
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
-    line-height: 25.6px; /* 196.923% */
+    line-height: 25.6px;
+    /* 196.923% */
     letter-spacing: 1px;
     text-transform: capitalize;
 }
+
 @mixin sticky {
-    position: fixed;
+    position: -webkit-sticky;
+    position: sticky;
     top: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.3); 
-    transition: background-color 0.3s ease-in; 
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease-in;
     z-index: 1000;
 }
+
 @mixin desktop {
     @media screen and (min-width: 850px) {
-      @content
+        @content
     }
-  }
-*{
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-$primary-color:#111926;
+
+.active{
+    display: flex;
+    @include navtext;
+    flex-direction: column;
+    background-color: #111926;
+    width: 100vw; 
+    height: 100vh; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    font-style: normal;
+    flex-wrap: wrap;
+    font-size: 24px;
+    @include slideDown();
+
+   ul{
+    margin-top: 100px;
+    text-align: center;
+   }
+    li{
+        margin-top: 40px;
+        a{
+            text-decoration: none;
+            color: white;
+
+        }
+    }
+}

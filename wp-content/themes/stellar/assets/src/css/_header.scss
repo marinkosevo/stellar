@@ -1,76 +1,97 @@
 @import 'config';
-.header{
+header {
+    position: sticky;
+    width: 100%;
+    top: 0;
+}
+
+.header {
     display: flex;
-    flex-direction: row;
+    height: 100px;
+    margin: 0 auto;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     background-color: $primary-color;
-    padding-bottom: 24px;
-    width: 100vw;
-    justify-content: space-around; 
-    padding-top: 25px;
+    padding:20px 30px;
+    justify-content: space-around;
     @include sticky;
-    @include desktop{
+
+    @include desktop {
         justify-content: space-evenly;
-        padding-top: 50px;
     }
 
-    &__logo{
+    &__wrapper {
+        width: 100%; 
+        display: flex;
+        justify-content: space-between; 
+        align-items: center; 
+    }
+    &__logo {
         width: 50%;
         display: inline-flex;
         justify-content: flex-start;
+        z-index: 3;
 
-        @include desktop{
+        @include desktop {
             display: block;
             width: auto;
             margin: auto 0;
         }
-            img{
-                width: 150px;
-            }
-        
+
+        img {
+            width: 150px;
+        }
+
     }
-    &__nav{
+
+    &__nav {
         width: 60%;
-        margin:auto 0;
+        margin: auto 0;
         display: none;
-        @include desktop{
+
+        @include desktop {
             display: inline-flex;
-            .nav-menu{
+
+            .nav-menu {
                 display: flex;
                 list-style: none;
                 box-sizing: inherit;
 
 
-                    ul{     
-                        display: inline-flex;
-                        list-style-type: none;
-                        align-items: flex-start;
-                        gap: 34.241px;
+                ul {
+                    display: inline-flex;
+                    list-style-type: none;
+                    align-items: flex-start;
 
-                        li{
-                            
-                            a{
-                                @include navtext;
-                            }
-        
+                    gap: 34.241px;
+
+                    li {
+                        cursor: pointer;
+                        a {
+                            @include navtext;
                         }
+
                     }
-                    
-            
                 }
+
+
             }
+            
         }
-    &__right-side{
+    }
+
+    &__right-side {
         display: none;
-           
-        @include desktop
-        {   
+
+        @include desktop {
 
             display: inline-flex;
-            color:black;
+            color: black;
             display: inline-flex;
             padding-left: 0px;
             justify-content: flex-end;
-            align-items: center;   
+            align-items: center;
         }
 
         a {
@@ -79,19 +100,23 @@
             @include navtext;
 
         }
-        .try_button{
+
+        .try_button {
             margin-left: 2em;
             border-radius: 8px;
             border: 1px solid #FFF;
-            background: #06F; 
-            padding: 9px 17px;  
+            background: #06F;
+            padding: 9px 17px;
             @include buttontext
         }
     }
-    &__show-mobile{
+
+    &__show-mobile {
         display: inline-flex;
         margin: auto 0;
-        @include desktop{
+        z-index: 3;
+
+        @include desktop {
             display: none;
         }
     }

@@ -2,7 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', function() {
-        var header = document.querySelector('.header');
+        var header = document.getElementsByClassName('header')[0];
 
         if (header) {
             if (window.scrollY > 0) {
@@ -13,4 +13,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-console.log('hej')
+var menu= document.getElementsByClassName('header__nav')[0];
+var toggle= document.getElementById('toggle-menu');
+toggle.addEventListener('click',()=> {
+    if (menu.classList.contains('active')) {
+        menu.classList.remove('active');
+    } else {
+        menu.classList.add('active');
+        menu.style= backgroundColor="black"
+    }
+})
+console.log(menu)

@@ -1,5 +1,4 @@
 @import 'config';
-
 header {
     position: sticky;
     width: 100%;
@@ -14,7 +13,7 @@ header {
     position: sticky;
     top: 0;
     background-color: $primary-color;
-    padding: 20px 30px;
+    padding:20px 30px;
     justify-content: space-around;
     @include sticky;
 
@@ -23,12 +22,12 @@ header {
     }
 
     &__wrapper {
-        width: 100%;
+        width: 100%; 
+        max-width: 1280px;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: space-between; 
+        align-items: center; 
     }
-
     &__logo {
         width: 50%;
         display: inline-flex;
@@ -70,7 +69,6 @@ header {
 
                     li {
                         cursor: pointer;
-
                         a {
                             @include navtext;
                         }
@@ -80,7 +78,7 @@ header {
 
 
             }
-
+            
         }
     }
 

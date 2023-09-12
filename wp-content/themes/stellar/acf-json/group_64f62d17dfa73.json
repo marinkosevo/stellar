@@ -36,7 +36,7 @@
                     "sub_fields": [
                         {
                             "key": "field_64f62d3f6aa78",
-                            "label": "gallery cover",
+                            "label": "Gallery cover",
                             "name": "gallery_cover",
                             "aria-label": "",
                             "type": "image",
@@ -61,7 +61,7 @@
                         },
                         {
                             "key": "field_64f62d556aa79",
-                            "label": "gallery content",
+                            "label": "Gallery content",
                             "name": "gallery_content",
                             "aria-label": "",
                             "type": "gallery",
@@ -127,7 +127,7 @@
                         },
                         {
                             "key": "field_64f62f9f6aa7c",
-                            "label": "price before",
+                            "label": "Price before",
                             "name": "price_before",
                             "aria-label": "",
                             "type": "number",
@@ -149,7 +149,7 @@
                         },
                         {
                             "key": "field_64f62fae6aa7d",
-                            "label": "price after",
+                            "label": "Price after",
                             "name": "price_after",
                             "aria-label": "",
                             "type": "number",
@@ -171,7 +171,7 @@
                         },
                         {
                             "key": "field_64f62fbb6aa7e",
-                            "label": "benefits",
+                            "label": "Benefits",
                             "name": "benefits",
                             "aria-label": "",
                             "type": "repeater",
@@ -236,7 +236,7 @@
                         },
                         {
                             "key": "field_64f630526aa82",
-                            "label": "upgrades",
+                            "label": "Upgrades",
                             "name": "upgrades",
                             "aria-label": "",
                             "type": "repeater",
@@ -258,7 +258,7 @@
                             "sub_fields": [
                                 {
                                     "key": "field_64f630736aa83",
-                                    "label": "upgrade image",
+                                    "label": "Upgrade image",
                                     "name": "upgrade_image",
                                     "aria-label": "",
                                     "type": "image",
@@ -284,7 +284,7 @@
                                 },
                                 {
                                     "key": "field_64f630816aa84",
-                                    "label": "upgrade heading",
+                                    "label": "Upgrade heading",
                                     "name": "upgrade_heading",
                                     "aria-label": "",
                                     "type": "text",
@@ -305,7 +305,7 @@
                                 },
                                 {
                                     "key": "field_64f630a26aa85",
-                                    "label": "upgrade price",
+                                    "label": "Upgrade price",
                                     "name": "upgrade_price",
                                     "aria-label": "",
                                     "type": "number",
@@ -496,7 +496,7 @@
             "sub_fields": [
                 {
                     "key": "field_64f631cf6aa92",
-                    "label": "faq heading",
+                    "label": "Faq heading",
                     "name": "faq_heading",
                     "aria-label": "",
                     "type": "text",
@@ -516,7 +516,7 @@
                 },
                 {
                     "key": "field_64f631de6aa93",
-                    "label": "questions",
+                    "label": "Questions",
                     "name": "questions",
                     "aria-label": "",
                     "type": "repeater",
@@ -578,5 +578,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1693858006
+    "modified": 1694368644
 }

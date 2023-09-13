@@ -19,7 +19,7 @@
                     <img class="max-w-fit" width="28px" src="<?php bloginfo('template_directory'); ?>/assets/images/menu-icon.png" alt="">
                 </div>
                 <div class="header__logo items-start flex">
-                    <img class="max-w-fit"width="146px" height="24px" src="<?php bloginfo('template_directory'); ?>/assets/images/nectar_logo.svg" alt="" srcset="">
+                    <img class="max-w-fit" width="146px" height="24px" src="<?php bloginfo('template_directory'); ?>/assets/images/nectar_logo.svg" alt="" srcset="">
                 </div>
                 <div class="header__nav-menu items-start flex  ml-14 mr-24 hidden md:block">
                     <nav class="nav-menu flex-row items-center justify-between place-items-baseline	">

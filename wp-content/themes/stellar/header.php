@@ -13,47 +13,30 @@
 <body>
 
     <header>
-        <div class="header bg-yellow-500">
-            <div class="header__wrapper flex">
-                <div class="header__logo flex w-1/3 p-4">
-                    <img src="<?php bloginfo('template_directory'); ?>/assets/images/logo-1.png" alt="" srcset="">
+        <div class="header">
+            <div class="header__wrapper flex justify-evenly sm:gap-3 pl-20	pr-32 py-5">
+                <div class="header__mobile-menu sm:flex md:hidden" id="toggle-menu">
+                    <img class="max-w-fit" width="28px" src="<?php bloginfo('template_directory'); ?>/assets/images/menu-icon.png" alt="">
                 </div>
-                <div class="header__nav flex">
-                    <nav class="nav-menu">
+                <div class="header__logo items-start flex">
+                    <img class="max-w-fit"width="146px" height="24px" src="<?php bloginfo('template_directory'); ?>/assets/images/nectar_logo.svg" alt="" srcset="">
+                </div>
+                <div class="header__nav-menu items-start flex  ml-14 mr-24 hidden md:block">
+                    <nav class="nav-menu flex-row items-center justify-between place-items-baseline	">
                         <?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
                     </nav>
                 </div>
-                <div class="header__right-side flex">
-                    <a href="">Login</a>
-                    <button class="try_button">Try for free</button>
+                <div class="header__nav-help items-start flex hidden md:block ">
+                    <nav class="nav-menu flex-row items-center justify-between place-items-baseline	">
+                        <?php wp_nav_menu(array('theme_location' => 'help-menu')); ?>
+                    </nav>
                 </div>
+
+
             </div>
-            <div class="p-4 text-white">
-                Ovo je primjer korištenja Tailwind CSS unutar WordPressa.
-            </div>
+
         </div>
 
 
 
     </header>
-
-    <figure class="bg-slate-100 rounded-xl p-8 dark:bg-slate-800">
-  <img class="w-24 h-24 rounded-full mx-auto" src="/sarah-dayan.jpg" alt="" width="384" height="512">
-  <div class="pt-6 space-y-4">
-    <blockquote>
-      <p class="text-lg font-medium">
-        “Tailwind CSS is the only framework that I've seen scale
-        on large teams. It’s easy to customize, adapts to any design,
-        and the build size is tiny.”
-      </p>
-    </blockquote>
-    <figcaption>
-      <div>
-        Sarah Dayan
-      </div>
-      <div>
-        Staff Engineer, Algolia
-      </div>
-    </figcaption>
-  </div>
-</figure>

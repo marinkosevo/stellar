@@ -1,8 +1,30 @@
 @import 'config';
 
+#menu-help-menu {
+
+    li {
+        @include menu;
+        @include navtext;
+        color: grey;
 
 
 
+    }
+}
+
+#menu-main-menu {
+    @include menu;
+
+
+    li {
+        @include menu;
+        @include navtext;
+    }
+
+    li:last-child {
+        color: red;
+    }
+}
 
 
 

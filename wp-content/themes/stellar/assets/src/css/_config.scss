@@ -1,21 +1,13 @@
-$primary-color: #111926;
-
-
-
-
+$primary-color: #133EBF;
 
 @mixin navtext {
-    color: #D4E0E7;
+    color: $primary-color;
     font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+    font-family: Roobert;
+    font-size: 16px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 25.6px;
-    letter-spacing: 1px;
-    width: auto;
-    text-decoration: none;
-
-
+    font-weight: 500;
+    line-height: 140%;
 
 }
 
@@ -49,14 +41,11 @@ $primary-color: #111926;
     text-transform: capitalize;
 }
 
-@mixin sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s ease-in;
-    z-index: 1000;
+@mixin menu {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 16px;
 }
 
 @mixin desktop {

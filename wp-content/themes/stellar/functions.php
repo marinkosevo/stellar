@@ -25,7 +25,7 @@ function register_my_menu()
   register_nav_menus(
     array(
       'header-menu' => __('Header Menu'),
-      'footer-menu' => __('Footer Menu'),
+      'help-menu' => __('Help Menu'),
 
     )
   );

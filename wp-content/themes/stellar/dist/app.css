@@ -2034,6 +2034,10 @@ video {
   color: red;
 }
 
+.header .__mobile-menu .img {
+  width: 28px;
+}
+
 /*
 header {
     position: sticky;
@@ -2274,16 +2278,8 @@ header {
 }
 @media (min-width: 640px) {
 
-  .sm\:invisible {
-    visibility: hidden;
-  }
-
   .sm\:flex {
     display: flex;
-  }
-
-  .sm\:w-1\/2 {
-    width: 50%;
   }
 
   .sm\:gap-3 {
@@ -2296,16 +2292,8 @@ header {
 }
 @media (min-width: 768px) {
 
-  .md\:invisible {
-    visibility: hidden;
-  }
-
   .md\:block {
     display: block;
-  }
-
-  .md\:flex {
-    display: flex;
   }
 
   .md\:hidden {

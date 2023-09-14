@@ -14,7 +14,7 @@
 
     <header>
         <div class="header">
-            <div class="header__wrapper max-w-[1200px] justify-items-start w-full mx-auto flex justify-between sm:gap-3 pl-20 pr-32 py-5">
+            <div class="header__wrapper max-w-[1200px] w-full mx-auto flex justify-between sm:gap-3  py-5">
                 <div class="header__mobile-menu sm:flex md:hidden" id="toggle-menu">
                     <img class="max-w-fit" src="<?php bloginfo('template_directory'); ?>/assets/images/menu-icon.png" alt="">
                 </div>

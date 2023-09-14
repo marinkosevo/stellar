@@ -729,6 +729,12 @@ video {
 .w-24 {
   width: 6rem;
 }
+.w-full {
+  width: 100%;
+}
+.max-w-\[1200px\] {
+  max-width: 1200px;
+}
 .max-w-fit {
   max-width: -moz-fit-content;
   max-width: fit-content;
@@ -2034,8 +2040,12 @@ video {
   color: red;
 }
 
-.header .__mobile-menu .img {
+.header__mobile-menu img {
   width: 28px;
+}
+.header__logo img {
+  width: 146px;
+  height: 24px;
 }
 
 /*

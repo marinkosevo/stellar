@@ -105,10 +105,11 @@
   color: red;
 }
 
-.header .__mobile-menu .img {
+.header__mobile-menu img {
   width: 28px;
+  background-color: red;
 }
-.header .__logo img {
+.header__logo img {
   width: 146px;
   height: 24px;
 }

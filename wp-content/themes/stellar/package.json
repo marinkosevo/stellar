@@ -21,6 +21,7 @@
     "tailwindcss": "^3.3.3"
   },
   "dependencies": {
+    "swiper": "^10.2.0",
     "watch": "^1.0.2"
   }
 }

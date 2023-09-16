@@ -1,24 +1,27 @@
-document.addEventListener("DOMContentLoaded", function () {
-  window.addEventListener("scroll", function () {
-    var header = document.getElementsByClassName("header")[0];
+import Swiper from 'swiper/bundle';
 
-    if (header) {
-      if (window.scrollY > 0) {
-        header.style.backgroundColor = "#111926";
-      } else {
-        header.style.backgroundColor = "rgba(0, 0, 0, 0.3)";
-      }
-    }
+// import styles bundle
+import 'swiper/css/bundle';
+
+var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
   });
-});
-var menu = document.getElementsByClassName("header__nav")[0];
-var toggle = document.getElementById("toggle-menu");
-toggle.addEventListener("click", () => {
-  if (menu.classList.contains("active")) {
-    menu.classList.remove("active");
-  } else {
-    menu.classList.add("active");
-    menu.style = backgroundColor = "black";
-  }
-});
-console.log(menu);
+  var swiper = new Swiper(".mySwiper2", {
+    loop: true,
+    spaceBetween: 10,
+    freeMode: true,
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+      swiper: swiper,
+    },
+
+  });
+

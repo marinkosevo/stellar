@@ -854,8 +854,29 @@
                     "sub_fields": [
                         {
                             "key": "field_64f631ea6aa94",
-                            "label": "question",
+                            "label": "Question",
                             "name": "question",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_64f631de6aa93"
+                        },
+                        {
+                            "key": "field_650b3a6c9f9d5",
+                            "label": "Answer",
+                            "name": "answer",
                             "aria-label": "",
                             "type": "text",
                             "instructions": "",
@@ -896,5 +917,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1695220988
+    "modified": 1695234679
 }

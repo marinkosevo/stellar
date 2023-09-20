@@ -39,3 +39,24 @@ var swiper1 = new Swiper(".mySwiper", {
     },
   });
 
+    var faqQuestions = document.querySelectorAll(".faq-question");
+
+    var faqQuestions = document.getElementsByClassName("faq-question");
+
+    for (var i = 0; i < faqQuestions.length; i++) {
+        faqQuestions[i].addEventListener("click", function() {
+            var answer = this.nextElementSibling;
+
+            if (answer.classList.contains("open")) {
+                answer.classList.remove("open");
+                var toggleIcon = this.getElementsByClassName("faq-toggle")[0];
+                toggleIcon.classList.remove("fa-chevron-up");
+                toggleIcon.classList.add("fa-chevron-down");
+            } else {
+                answer.classList.add("open");
+                var toggleIcon = this.getElementsByClassName("faq-toggle")[0];
+                toggleIcon.classList.remove("fa-chevron-down");
+                toggleIcon.classList.add("fa-chevron-up");
+            }
+        });
+    }

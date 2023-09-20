@@ -1,9 +1,5 @@
 @import 'config';
 
-.swiper {
-    width: 600px;
-    height: 300px;
-  }
 
 .header {
     &__mobile-menu {
@@ -16,6 +12,7 @@
         & img {
             width: 146px;
             height: 24px;
+            @apply py-[40px] px-[50px]; 
         }
     }
 

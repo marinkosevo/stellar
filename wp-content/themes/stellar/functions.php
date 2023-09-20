@@ -12,6 +12,8 @@ function scripts()
   wp_enqueue_script('jquery');
 
   wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Roboto&display=swap', false);
+  
+    wp_enqueue_script('font-awesome', 'https://kit.fontawesome.com/4d1287908c.js', array(), null, true);
 
   wp_register_script('app', get_template_directory_uri() . '/dist/app.js', ['jquery'], 1, true);
   wp_enqueue_script('app');

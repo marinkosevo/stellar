@@ -15,12 +15,16 @@ __webpack_require__.r(__webpack_exports__);
 
 // import styles bundle
 
-var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](".mySwiper", {
+var swiper1 = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](".mySwiper", {
   loop: true,
   spaceBetween: 10,
   slidesPerView: 4,
   freeMode: true,
-  watchSlidesProgress: true
+  watchSlidesProgress: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  }
 });
 var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](".mySwiper2", {
   loop: true,
@@ -32,6 +36,15 @@ var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](".mySwipe
   },
   thumbs: {
     swiper: swiper
+  }
+});
+var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](".mySwiper3", {
+  slidesPerView: "auto",
+  freeMode: true,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
   }
 });
 

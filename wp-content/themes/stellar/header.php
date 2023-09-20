@@ -11,7 +11,7 @@
 </head>
 
 <body>
-
+    
     <header>
         <div class="header">
             <div class="header__wrapper max-w-[1280px] w-full mx-auto flex justify-evenly sm:gap-3 text-base py-5">

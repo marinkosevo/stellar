@@ -3,6 +3,23 @@
     "title": "Single Template",
     "fields": [
         {
+            "key": "field_650703861ab50",
+            "label": "Hero",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
             "key": "field_64f62d186aa76",
             "label": "Hero",
             "name": "hero",
@@ -270,7 +287,7 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "return_format": "url",
+                                    "return_format": "array",
                                     "library": "all",
                                     "min_width": "",
                                     "min_height": "",
@@ -327,10 +344,251 @@
                                     "parent_repeater": "field_64f630526aa82"
                                 }
                             ]
+                        },
+                        {
+                            "key": "field_650ab47b474e9",
+                            "label": "Table",
+                            "name": "table",
+                            "aria-label": "",
+                            "type": "group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_650ab48a474ea",
+                                    "label": "Row",
+                                    "name": "row",
+                                    "aria-label": "",
+                                    "type": "repeater",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "layout": "table",
+                                    "pagination": 0,
+                                    "min": 0,
+                                    "max": 0,
+                                    "collapsed": "",
+                                    "button_label": "Add Row",
+                                    "rows_per_page": 20,
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_650ab495474eb",
+                                            "label": "Item",
+                                            "name": "item",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "parent_repeater": "field_650ab48a474ea"
+                                        },
+                                        {
+                                            "key": "field_650ab4ab474ec",
+                                            "label": "Nectar",
+                                            "name": "nectar",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "parent_repeater": "field_650ab48a474ea"
+                                        },
+                                        {
+                                            "key": "field_650ab4b4474ed",
+                                            "label": "Comp1",
+                                            "name": "comp1",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "parent_repeater": "field_650ab48a474ea"
+                                        },
+                                        {
+                                            "key": "field_650ab4de474ee",
+                                            "label": "Comp2",
+                                            "name": "comp2",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "parent_repeater": "field_650ab48a474ea"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "field_650ac953295dd",
+                                    "label": "Total",
+                                    "name": "total",
+                                    "aria-label": "",
+                                    "type": "group",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "layout": "table",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_650ac95b295de",
+                                            "label": "Item",
+                                            "name": "item",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": ""
+                                        },
+                                        {
+                                            "key": "field_650ac972295df",
+                                            "label": "Nectar",
+                                            "name": "nectar",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": ""
+                                        },
+                                        {
+                                            "key": "field_650ac979295e0",
+                                            "label": "Comp1",
+                                            "name": "comp1",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": ""
+                                        },
+                                        {
+                                            "key": "field_650ac982295e1",
+                                            "label": "Comp2",
+                                            "name": "comp2",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": ""
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 }
             ]
+        },
+        {
+            "key": "field_6507039e1ab51",
+            "label": "Image",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
         },
         {
             "key": "field_64f630cf6aa86",
@@ -391,7 +649,7 @@
                     "sub_fields": [
                         {
                             "key": "field_64f631226aa89",
-                            "label": "heading",
+                            "label": "Blue heading",
                             "name": "heading",
                             "aria-label": "",
                             "type": "text",
@@ -410,8 +668,28 @@
                             "append": ""
                         },
                         {
+                            "key": "field_650af06179ed9",
+                            "label": "Dark heading",
+                            "name": "dark_heading",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
                             "key": "field_64f6312c6aa8a",
-                            "label": "features",
+                            "label": "Features",
                             "name": "features",
                             "aria-label": "",
                             "type": "repeater",
@@ -451,12 +729,33 @@
                                     "prepend": "",
                                     "append": "",
                                     "parent_repeater": "field_64f6312c6aa8a"
+                                },
+                                {
+                                    "key": "field_650afb5867847",
+                                    "label": "content",
+                                    "name": "content",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_64f6312c6aa8a"
                                 }
                             ]
                         },
                         {
                             "key": "field_64f6315a6aa8c",
-                            "label": "button",
+                            "label": "Button",
                             "name": "button",
                             "aria-label": "",
                             "type": "text",
@@ -477,6 +776,23 @@
                     ]
                 }
             ]
+        },
+        {
+            "key": "field_650ab344c7ee8",
+            "label": "FAQ",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
         },
         {
             "key": "field_64f631c26aa91",
@@ -539,9 +855,9 @@
                         {
                             "key": "field_64f631ea6aa94",
                             "label": "question",
-                            "name": "",
+                            "name": "question",
                             "aria-label": "",
-                            "type": "accordion",
+                            "type": "text",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -550,9 +866,11 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "open": 0,
-                            "multi_expand": 0,
-                            "endpoint": 1,
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
                             "parent_repeater": "field_64f631de6aa93"
                         }
                     ]
@@ -578,5 +896,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1694368644
+    "modified": 1695220988
 }

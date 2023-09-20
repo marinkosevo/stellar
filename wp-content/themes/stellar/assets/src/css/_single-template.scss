@@ -79,13 +79,3 @@ $primary-color: #007bff;
 }
 
 
-.faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
-}
-
-.faq-answer.open {
-    max-height: 500px;
-    overflow:visible;
-}

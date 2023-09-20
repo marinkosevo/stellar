@@ -738,6 +738,9 @@ video {
 .h-24 {
   height: 6rem;
 }
+.max-h-\[500px\] {
+  max-height: 500px;
+}
 .w-1\/2 {
   width: 50%;
 }
@@ -2492,18 +2495,6 @@ header {
 .mySwiper3 .swiper-button-next:after {
   display: none;
 }
-
-.faq-answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-in-out;
-}
-
-.faq-answer.open {
-  max-height: 500px;
-  overflow: visible;
-}
-
 @media (min-width: 640px) {
 
   .sm\:container {
@@ -2545,34 +2536,27 @@ header {
     }
   }
 }
-
 .first\:text-red-400:first-child {
   --tw-text-opacity: 1;
   color: rgb(248 113 113 / var(--tw-text-opacity));
 }
-
 .hover\:font-bold:hover {
   font-weight: 700;
 }
-
 .before\:hover\:text-center:hover::before {
   content: var(--tw-content);
   text-align: center;
 }
-
 .hover\:before\:text-center:hover::before {
   content: var(--tw-content);
   text-align: center;
 }
-
 .focus\:hover\:text-center:hover:focus {
   text-align: center;
 }
-
 .hover\:focus\:text-center:focus:hover {
   text-align: center;
 }
-
 @media (prefers-color-scheme: dark) {
 
   .dark\:bg-slate-800 {
@@ -2580,7 +2564,6 @@ header {
     background-color: rgb(30 41 59 / var(--tw-bg-opacity));
   }
 }
-
 @media (min-width: 640px) {
 
   .sm\:flex {
@@ -2595,7 +2578,6 @@ header {
     text-decoration-line: underline;
   }
 }
-
 @media (min-width: 768px) {
 
   .md\:block {
@@ -2606,7 +2588,6 @@ header {
     display: none;
   }
 }
-
 @media (prefers-color-scheme: dark) {
 
   @media (min-width: 1024px) {
@@ -2616,20 +2597,16 @@ header {
     }
   }
 }
-
 .\[\&_img\]\:w-20 img {
   width: 5rem;
 }
-
 .\[\&_li\:last-child\]\:text-red-500 li:last-child {
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
 }
-
 .\[\&_ul\]\:flex ul {
   display: flex;
 }
-
 .\[\&_ul\]\:gap-\[32px\] ul {
   gap: 32px;
 }

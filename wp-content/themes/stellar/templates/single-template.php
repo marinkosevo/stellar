@@ -207,17 +207,15 @@
 
                 <h1 class="text-center text-[45px] pb-[70px] text-[#262B38] "><?= $faq['faq_heading'] ?></h1>
                 <?php if ($questions) :
-                    foreach ($questions as $key => $question) : ?>
+                    foreach ($questions as  $question) : ?>
                         <div class="faq-question flex flex-row w-3/12 mx-auto border-b-[1px] border-gray-200 relative">
-                            <h1 class="text-[#262B38] text-[16px] text-left py-[20px]"><?= $question['question'] ?></h1>
+                            <h1 class="text-[#262B38] text-[16px] text-left py-[20px] "><?= $question['question'] ?></h1>
                             <i class="faq-toggle absolute top-1/2 transform -translate-y-1/2 right-0 fa-solid fa-chevron-down cursor-pointer"></i>
                         </div>
-                        <div class="faq-answer hidden px-4 py-2 text-[#262B38] w-3/12 mx-auto"><?= $question['answer'] ?></div>
+                        <div class="faq-answer hidden px-4 py-2 text-[#262B38] max-h-[500px] w-3/12 mx-auto"><?= $question['answer'] ?></div>
                 <?php endforeach;
                 endif ?>
             </div>
-
-
         <?php endif; ?>
 
     <?php endwhile;

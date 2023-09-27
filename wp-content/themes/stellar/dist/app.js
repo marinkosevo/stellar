@@ -15,6 +15,66 @@ __webpack_require__.r(__webpack_exports__);
 
 // import styles bundle
 
+function myPlugin(_ref) {
+  var swiper = _ref.swiper,
+    extendParams = _ref.extendParams,
+    on = _ref.on;
+  extendParams({
+    "debugger": false
+  });
+  on('init', function () {
+    if (!swiper.params["debugger"]) return;
+    console.log('init');
+  });
+  on('click', function (swiper, e) {
+    if (!swiper.params["debugger"]) return;
+    console.log('click');
+  });
+  on('tap', function (swiper, e) {
+    if (!swiper.params["debugger"]) return;
+    console.log('tap');
+  });
+  on('doubleTap', function (swiper, e) {
+    if (!swiper.params["debugger"]) return;
+    console.log('doubleTap');
+  });
+  on('sliderMove', function (swiper, e) {
+    if (!swiper.params["debugger"]) return;
+    console.log('sliderMove');
+  });
+  on('slideChange', function () {
+    if (!swiper.params["debugger"]) return;
+    console.log('slideChange', swiper.previousIndex, '->', swiper.activeIndex);
+  });
+  on('slideChangeTransitionStart', function () {
+    if (!swiper.params["debugger"]) return;
+    console.log('slideChangeTransitionStart');
+  });
+  on('slideChangeTransitionEnd', function () {
+    if (!swiper.params["debugger"]) return;
+    console.log('slideChangeTransitionEnd');
+  });
+  on('transitionStart', function () {
+    if (!swiper.params["debugger"]) return;
+    console.log('transitionStart');
+  });
+  on('transitionEnd', function () {
+    if (!swiper.params["debugger"]) return;
+    console.log('transitionEnd');
+  });
+  on('fromEdge', function () {
+    if (!swiper.params["debugger"]) return;
+    console.log('fromEdge');
+  });
+  on('reachBeginning', function () {
+    if (!swiper.params["debugger"]) return;
+    console.log('reachBeginning');
+  });
+  on('reachEnd', function () {
+    if (!swiper.params["debugger"]) return;
+    console.log('reachEnd');
+  });
+}
 var swiper1 = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](".mySwiper", {
   loop: true,
   spaceBetween: 10,
@@ -29,22 +89,30 @@ var swiper1 = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](".mySwip
 var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](".mySwiper2", {
   loop: true,
   spaceBetween: 10,
-  freeMode: true,
+  modules: [myPlugin],
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
   },
-  thumbs: {
-    swiper: swiper
-  }
+  "debugger": true
 });
 var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](".mySwiper3", {
   slidesPerView: "auto",
   freeMode: true,
   spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  }
+});
+var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](".mySwiper4", {
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    hide: true
   }
 });
 document.addEventListener("DOMContentLoaded", function () {

@@ -1,0 +1,16 @@
+{
+    "apiVersion": 2,
+    "name": "stellar/testimonial",
+    "title": "Header Section",
+    "description": "A custom testimonial block that uses ACF fields.",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["header", "section"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "testimonial.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

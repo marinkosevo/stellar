@@ -49,6 +49,9 @@ function my_acf_json_save_point( $path ) {
     return $path;
     
 }
- 
+add_action( 'init', 'stellar_register_acf_blocks' );
+function stellar_register_acf_blocks() {
 
-?>
+  $mypath=( dirname(__FILE__) . '/blocks/testimonial' );
+  var_dump( $mypath );
+}

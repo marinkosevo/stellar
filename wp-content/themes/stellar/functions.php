@@ -11,12 +11,13 @@ function scripts()
 
   wp_enqueue_script('jquery');
 
-  wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Roboto&display=swap', false);
+  wp_enqueue_style('custom-google-font', 'https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600&display=swap');
   
     wp_enqueue_script('font-awesome', 'https://kit.fontawesome.com/4d1287908c.js', array(), null, true);
 
   wp_register_script('app', get_template_directory_uri() . '/dist/app.js', ['jquery'], 1, true);
   wp_enqueue_script('app');
+  
 }
 add_action('wp_enqueue_scripts', 'scripts');
 
@@ -50,8 +51,18 @@ function my_acf_json_save_point( $path ) {
     
 }
 add_action( 'init', 'stellar_register_acf_blocks' );
+add_theme_support( 'post-thumbnails' );
 function stellar_register_acf_blocks() {
 
-  $mypath=( dirname(__FILE__) . '/blocks/testimonial' );
-  var_dump( $mypath );
+  register_block_type( dirname(__FILE__) . '/blocks/header-section' );
+  register_block_type( dirname(__FILE__) . '/blocks/logo-bar' );
+  register_block_type( dirname(__FILE__) . '/blocks/skill-section' );
+  register_block_type( dirname(__FILE__) . '/blocks/gallery-section' );
+  register_block_type( dirname(__FILE__) . '/blocks/testimonials' );
+  register_block_type( dirname(__FILE__) . '/blocks/contact-section' );
+
+
+
+
+
 }

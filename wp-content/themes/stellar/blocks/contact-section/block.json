@@ -1,0 +1,15 @@
+{
+    "name": "stellar/contact-section",
+    "title": "Contact Section",
+    "description": "A custom testimonial block that uses ACF fields.",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["contact", "section"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "contact-section.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

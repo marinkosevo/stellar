@@ -1,0 +1,15 @@
+{
+    "name": "stellar/header-section",
+    "title": "Header Section",
+    "description": "A custom testimonial block that uses ACF fields.",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["header", "section"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "header-section.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

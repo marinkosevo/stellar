@@ -1,23 +1,13 @@
 @import 'config';
 
 
-.header {
-    &__mobile-menu {
-        & img {
-            width: 28px;
-        }
-    }
-
-    &__logo {
-        & img {
-            width: 146px;
-            height: 24px;
-            @apply py-[40px] px-[50px]; 
-        }
-    }
-
+.addactive {
+    display: block;
 }
 
+.nonactive {
+    display: none;
+}
 
 
 

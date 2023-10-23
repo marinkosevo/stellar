@@ -2,7 +2,7 @@
 $cards = get_field('cards');
 if ($cards):
     ?>
-    <div class="flex flex-row py-[42px] px-[24px] max-w-[1280px] mx-auto">
+    <div class="flex flex-col w-full md:flex-row py-[42px] px-[24px] max-w-[1280px] mx-auto">
         <?php
         foreach ($cards as $card):
             ?>

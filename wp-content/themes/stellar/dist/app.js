@@ -15,124 +15,16 @@ __webpack_require__.r(__webpack_exports__);
 
 // import styles bundle
 
-function myPlugin(_ref) {
-  var swiper = _ref.swiper,
-    extendParams = _ref.extendParams,
-    on = _ref.on;
-  extendParams({
-    "debugger": false
-  });
-  on('init', function () {
-    if (!swiper.params["debugger"]) return;
-    console.log('init');
-  });
-  on('click', function (swiper, e) {
-    if (!swiper.params["debugger"]) return;
-    console.log('click');
-  });
-  on('tap', function (swiper, e) {
-    if (!swiper.params["debugger"]) return;
-    console.log('tap');
-  });
-  on('doubleTap', function (swiper, e) {
-    if (!swiper.params["debugger"]) return;
-    console.log('doubleTap');
-  });
-  on('sliderMove', function (swiper, e) {
-    if (!swiper.params["debugger"]) return;
-    console.log('sliderMove');
-  });
-  on('slideChange', function () {
-    if (!swiper.params["debugger"]) return;
-    console.log('slideChange', swiper.previousIndex, '->', swiper.activeIndex);
-  });
-  on('slideChangeTransitionStart', function () {
-    if (!swiper.params["debugger"]) return;
-    console.log('slideChangeTransitionStart');
-  });
-  on('slideChangeTransitionEnd', function () {
-    if (!swiper.params["debugger"]) return;
-    console.log('slideChangeTransitionEnd');
-  });
-  on('transitionStart', function () {
-    if (!swiper.params["debugger"]) return;
-    console.log('transitionStart');
-  });
-  on('transitionEnd', function () {
-    if (!swiper.params["debugger"]) return;
-    console.log('transitionEnd');
-  });
-  on('fromEdge', function () {
-    if (!swiper.params["debugger"]) return;
-    console.log('fromEdge');
-  });
-  on('reachBeginning', function () {
-    if (!swiper.params["debugger"]) return;
-    console.log('reachBeginning');
-  });
-  on('reachEnd', function () {
-    if (!swiper.params["debugger"]) return;
-    console.log('reachEnd');
-  });
-}
-var swiper1 = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](".mySwiper", {
-  loop: true,
-  spaceBetween: 10,
-  slidesPerView: 4,
-  freeMode: true,
-  watchSlidesProgress: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true
-  }
+var mobileMenu = document.getElementById('mobile-menu');
+var menuToggleButton = document.getElementById('menu-toggle-button');
+var menuClose = document.getElementById('close-menu');
+menuToggleButton.addEventListener('click', function () {
+  mobileMenu.classList.remove('nonactive');
+  mobileMenu.classList.add('addactive');
 });
-var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](".mySwiper2", {
-  loop: true,
-  spaceBetween: 10,
-  modules: [myPlugin],
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  },
-  "debugger": true
-});
-var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](".mySwiper3", {
-  slidesPerView: "auto",
-  freeMode: true,
-  spaceBetween: 30,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  }
-});
-var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](".mySwiper4", {
-  scrollbar: {
-    el: ".swiper-scrollbar",
-    hide: true
-  }
-});
-document.addEventListener("DOMContentLoaded", function () {
-  var faqQuestions = document.getElementsByClassName("faq-question");
-  for (var i = 0; i < faqQuestions.length; i++) {
-    faqQuestions[i].addEventListener("click", function () {
-      var answer = this.nextElementSibling;
-      if (answer.style.display === "block") {
-        answer.style.display = "none";
-        var toggleIcon = this.getElementsByClassName("faq-toggle")[0];
-        toggleIcon.classList.remove("fa-chevron-up");
-        toggleIcon.classList.add("fa-chevron-down");
-      } else {
-        answer.style.display = "block";
-        var toggleIcon = this.getElementsByClassName("faq-toggle")[0];
-        toggleIcon.classList.remove("fa-chevron-down");
-        toggleIcon.classList.add("fa-chevron-up");
-      }
-    });
-  }
+menuClose.addEventListener('click', function () {
+  mobileMenu.classList.remove('addactive');
+  mobileMenu.classList.add('nonactive');
 });
 
 /***/ }),
@@ -244,10 +136,6 @@ module.exports = function (cssWithMappingToString) {
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
-<<<<<<< Updated upstream
-throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):\nError: ENOENT: no such file or directory, stat '/Users/lukakordic/Documents/GitHub/stellar/wp-content/themes/stellar/templates/custom-template.php'\n    at Object.statSync (node:fs:1690:3)\n    at resolveChangedFiles (/Users/lukakordic/Documents/GitHub/stellar/wp-content/themes/stellar/node_modules/tailwindcss/lib/lib/content.js:170:36)\n    at resolvedChangedContent (/Users/lukakordic/Documents/GitHub/stellar/wp-content/themes/stellar/node_modules/tailwindcss/lib/lib/content.js:142:42)\n    at /Users/lukakordic/Documents/GitHub/stellar/wp-content/themes/stellar/node_modules/tailwindcss/lib/lib/setupTrackingContext.js:133:99\n    at /Users/lukakordic/Documents/GitHub/stellar/wp-content/themes/stellar/node_modules/tailwindcss/lib/processTailwindFeatures.js:48:11\n    at plugins (/Users/lukakordic/Documents/GitHub/stellar/wp-content/themes/stellar/node_modules/tailwindcss/lib/plugin.js:38:69)\n    at LazyResult.runOnRoot (/Users/lukakordic/Documents/GitHub/stellar/wp-content/themes/stellar/node_modules/postcss/lib/lazy-result.js:357:16)\n    at LazyResult.runAsync (/Users/lukakordic/Documents/GitHub/stellar/wp-content/themes/stellar/node_modules/postcss/lib/lazy-result.js:286:26)\n    at LazyResult.async (/Users/lukakordic/Documents/GitHub/stellar/wp-content/themes/stellar/node_modules/postcss/lib/lazy-result.js:160:30)\n    at LazyResult.then (/Users/lukakordic/Documents/GitHub/stellar/wp-content/themes/stellar/node_modules/postcss/lib/lazy-result.js:436:17)\n    at processResult (/Users/lukakordic/Documents/GitHub/stellar/wp-content/themes/stellar/node_modules/webpack/lib/NormalModule.js:764:19)\n    at /Users/lukakordic/Documents/GitHub/stellar/wp-content/themes/stellar/node_modules/webpack/lib/NormalModule.js:866:5\n    at /Users/lukakordic/Documents/GitHub/stellar/wp-content/themes/stellar/node_modules/loader-runner/lib/LoaderRunner.js:400:11\n    at /Users/lukakordic/Documents/GitHub/stellar/wp-content/themes/stellar/node_modules/loader-runner/lib/LoaderRunner.js:252:18\n    at context.callback (/Users/lukakordic/Documents/GitHub/stellar/wp-content/themes/stellar/node_modules/loader-runner/lib/LoaderRunner.js:124:13)\n    at Object.loader (/Users/lukakordic/Documents/GitHub/stellar/wp-content/themes/stellar/node_modules/postcss-loader/dist/index.js:142:7)");
-=======
->>>>>>> Stashed changes
 
 /***/ }),
 

@@ -9,7 +9,7 @@ $query = new WP_Query($args);
 if ($query->have_posts()) {
     ?>
     <h1 class="py-[42px] text-center font-semibold text-[32px]">Latest Posts</h1>
-    <div class="flex flex-start grid grid-cols-3 gap-[24px] max-w-[1280px] mx-auto">
+    <div class="flex flex-start grid text-center md:text-left px-[20px] md:px-0 md:grid-cols-3 text-left gap-[24px] max-w-[1280px] mx-auto">
         <?php
         while ($query->have_posts()) {
             $query->the_post();

@@ -7,13 +7,13 @@ $inputs = $right_side['input'];
 
 if ($heading):
     ?>
-    <div class="pt-[42px] px-[24px] pb-[86px] max-w-[1280px] mx-auto flex flex-col gap-[24px]">
-        <h1 class="text-[32px] font-semibold"> 
+    <div class="pt-[42px] px-[24px] text-center md:text-left pb-[86px] max-w-[1280px] mx-auto flex flex-col gap-[24px]">
+        <h1 class="text-[32px]  font-semibold"> 
             <?= $heading ?>
         </h1>
     <?php endif;
 if ($left_side): ?>
-        <div class="flex flex-row grid grid-cols-2 gap-[142px]">
+        <div class="flex flex-col md:flex-row gap-[142px]">
             <div class="flex flex-col">
                 <p class="text-[17px]">
                     <?= $left_side['description'] ?>
@@ -23,7 +23,7 @@ if ($left_side): ?>
                         <?php
                         foreach ($socials as $social):
                             ?>
-                            <img class='w-[36px] h-[36px]'onclick="location.href= '<?= $social['link'] ?>'" src="<?= $social['image']['url'] ?>" alt="">
+                            <img class='w-[36px] h-[36px] object-scale-down'onclick="location.href= '<?= $social['link'] ?>'" src="<?= $social['image']['url'] ?>" alt="">
                             </img>
                         <?php endforeach; ?>
                     </div>
@@ -37,7 +37,7 @@ if ($left_side): ?>
 
                     <?php endforeach; endif; ?>
                     </div>
-                <button class="bg-[#2D2D2D] text-white py-[24px] px-[64px] w-fit"><?=$right_side['button'] ?></button>
+                <button class="bg-[#2D2D2D] text-white py-[24px] px-[64px] w-wrap"><?=$right_side['button'] ?></button>
             </div>
         </div>
     <?php endif; ?>

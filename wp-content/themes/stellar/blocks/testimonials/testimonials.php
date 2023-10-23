@@ -10,7 +10,7 @@ if ($heading): ?>
 endif;
 if ($testimonials):
     ?>
-    <div class="flex flex-start grid grid-cols-3 gap-[24px] max-w-[1280px] mx-auto">
+    <div class="flex flex-start grid grid-cols-1 md:grid-cols-3 gap-[24px] max-w-[1280px] mx-auto">
         <?php
         foreach ($testimonials as $testimonial):
             ?>

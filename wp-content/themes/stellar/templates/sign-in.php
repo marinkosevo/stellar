@@ -10,16 +10,16 @@
 
 
 
-<div class="relative flex ">
-    <div class="absolute top-[40px] left-[40px] flex">
-        <img class="inline" src="<?=get_template_directory_uri() . '/assets/images/Frame.png' ?>" alt="">
+<div class="relative flex flex-col ">
+    <div class="flex-row  mt-[88px] mx-auto md:absolute md:top-[40px] md:left-[40px] ">
+        <img class="md:inline mx-auto" src="<?=get_template_directory_uri() . '/assets/images/Frame.png' ?>" alt="">
         <span class="font-semibold text-[16px]">PNFT Market</span>
     </div>
-<span class="absolute bottom-[40px] left-[40px]">@Created by NamDesing</span>
+<span class="hidden md:flex md:absolute md:bottom-[40px] md:left-[40px] ">@Created by NamDesing</span>
 
     <div class="flex flex-row mx-auto grid md:grid-cols-2">
-        <div class="py-[222px] mx-auto">
-            <div class="flex just flex-col gap-[8px] pr-[19px]">
+        <div class="mt-[56px] md:mt-0 md:py-[222px] py-[24px] md:mx-auto">
+            <div class="flex just flex-col gap-[8px] pr-[29px] md:pr-[19px]">
                 <h1 class="text-[#344054] text-[40px] font-semibold"><?=__('NFT Access','stellar')?></h1>
                 <p class="text-[#667085] text-[16px] "><?=__('Please fill your detail to access your account.','stellar')?></p>
             </div>
@@ -40,7 +40,7 @@
 
                 <button class="px-[154px] py-[14px] bg-[#5429FF] text-white rounded-[8px]"><?=__('Sign in','stellar')?></button>
                 <button class="mx-auto border-gray-300 border border-solid rounded-[8px]"><div class='mx-auto my-auto flex flex-row gap-[8px] text-center px-[90px] py-[10px]'><img class='inline'src="<?=get_template_directory_uri() . '/assets/images/Google.png'?>" /><?=__('Sign in with Google','stellar')?></div> </button>
-                <p class="text-[#344054]"><?=__('Don’t have an account?','stellar')?><span class="text-[#5429FF]"><?=__('Sign up','stellar')?></span></p>
+                <p class="text-[#344054]"><?=__('Don’t have an account?','stellar')?><span class="text-[#5429FF]"><?=__(' Sign up','stellar')?></span></p>
 
 
 

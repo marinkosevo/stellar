@@ -10,21 +10,22 @@
 
 
 
-<div class="relative flex flex-col ">
-    <div class="flex-row  mt-[88px] mx-auto md:absolute md:top-[40px] md:left-[40px] ">
+<div class="relative ">
+    <div class="flex-row mx-auto text-center mb-[56px] md:absolute md:top-[40px] md:left-[40px] ">
         <img class="md:inline mx-auto" src="<?=get_template_directory_uri() . '/assets/images/Frame.png' ?>" alt="">
         <span class="font-semibold text-[16px]">PNFT Market</span>
     </div>
 <span class="hidden md:flex md:absolute md:bottom-[40px] md:left-[40px] ">@Created by NamDesing</span>
 
-    <div class="flex flex-row mx-auto grid md:grid-cols-2">
-        <div class="mt-[56px] md:mt-0 md:py-[222px] py-[24px] md:mx-auto">
-            <div class="flex just flex-col gap-[8px] pr-[29px] md:pr-[19px]">
+    <div class="flex flex-col md:flex-row  md:flex-1 mx-auto">
+    
+        <div class="self-center md:mx-auto">
+            <div class="flex just flex-col gap-[8px] mb-[56px]">
                 <h1 class="text-[#344054] text-[40px] font-semibold"><?=__('NFT Access','stellar')?></h1>
                 <p class="text-[#667085] text-[16px] "><?=__('Please fill your detail to access your account.','stellar')?></p>
             </div>
-            <div class="flex flex-col gap-[20px] mt-[56px]">
-                <div class="flex flex-col gap-[8px]"><label class='text-[#344054]' for="email"><?=__('Email','stellar')?></label><input
+            <div class="flex flex-col gap-[20px] ">
+                <div class="flex flex-col gap-[8px]"><label class='text-[#344054]' aria-placeholder="debra.holt@example.com" for="email"><?=__('Email','stellar')?></label><input
                         class="flex px-[14px] py-[10px] border border-solid border-gray-300 rounded-md p-2 text-[#667085] text-[16px]"
                         name="email" type="mail"> </div>
                 <div class="flex flex-col gap-[8px]"><label class='text-[#344054]' for="password"><?=__('Password','stellar')?></label><input

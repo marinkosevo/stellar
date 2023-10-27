@@ -15,124 +15,16 @@ __webpack_require__.r(__webpack_exports__);
 
 // import styles bundle
 
-function myPlugin(_ref) {
-  var swiper = _ref.swiper,
-    extendParams = _ref.extendParams,
-    on = _ref.on;
-  extendParams({
-    "debugger": false
-  });
-  on('init', function () {
-    if (!swiper.params["debugger"]) return;
-    console.log('init');
-  });
-  on('click', function (swiper, e) {
-    if (!swiper.params["debugger"]) return;
-    console.log('click');
-  });
-  on('tap', function (swiper, e) {
-    if (!swiper.params["debugger"]) return;
-    console.log('tap');
-  });
-  on('doubleTap', function (swiper, e) {
-    if (!swiper.params["debugger"]) return;
-    console.log('doubleTap');
-  });
-  on('sliderMove', function (swiper, e) {
-    if (!swiper.params["debugger"]) return;
-    console.log('sliderMove');
-  });
-  on('slideChange', function () {
-    if (!swiper.params["debugger"]) return;
-    console.log('slideChange', swiper.previousIndex, '->', swiper.activeIndex);
-  });
-  on('slideChangeTransitionStart', function () {
-    if (!swiper.params["debugger"]) return;
-    console.log('slideChangeTransitionStart');
-  });
-  on('slideChangeTransitionEnd', function () {
-    if (!swiper.params["debugger"]) return;
-    console.log('slideChangeTransitionEnd');
-  });
-  on('transitionStart', function () {
-    if (!swiper.params["debugger"]) return;
-    console.log('transitionStart');
-  });
-  on('transitionEnd', function () {
-    if (!swiper.params["debugger"]) return;
-    console.log('transitionEnd');
-  });
-  on('fromEdge', function () {
-    if (!swiper.params["debugger"]) return;
-    console.log('fromEdge');
-  });
-  on('reachBeginning', function () {
-    if (!swiper.params["debugger"]) return;
-    console.log('reachBeginning');
-  });
-  on('reachEnd', function () {
-    if (!swiper.params["debugger"]) return;
-    console.log('reachEnd');
-  });
-}
-var swiper1 = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](".mySwiper", {
-  loop: true,
-  spaceBetween: 10,
-  slidesPerView: 4,
-  freeMode: true,
-  watchSlidesProgress: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true
-  }
+var mobileMenu = document.getElementById('mobile-menu');
+var menuToggleButton = document.getElementById('menu-toggle-button');
+var menuClose = document.getElementById('close-menu');
+menuToggleButton.addEventListener('click', function () {
+  mobileMenu.classList.remove('nonactive');
+  mobileMenu.classList.add('addactive');
 });
-var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](".mySwiper2", {
-  loop: true,
-  spaceBetween: 10,
-  modules: [myPlugin],
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  },
-  "debugger": true
-});
-var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](".mySwiper3", {
-  slidesPerView: "auto",
-  freeMode: true,
-  spaceBetween: 30,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  }
-});
-var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](".mySwiper4", {
-  scrollbar: {
-    el: ".swiper-scrollbar",
-    hide: true
-  }
-});
-document.addEventListener("DOMContentLoaded", function () {
-  var faqQuestions = document.getElementsByClassName("faq-question");
-  for (var i = 0; i < faqQuestions.length; i++) {
-    faqQuestions[i].addEventListener("click", function () {
-      var answer = this.nextElementSibling;
-      if (answer.style.display === "block") {
-        answer.style.display = "none";
-        var toggleIcon = this.getElementsByClassName("faq-toggle")[0];
-        toggleIcon.classList.remove("fa-chevron-up");
-        toggleIcon.classList.add("fa-chevron-down");
-      } else {
-        answer.style.display = "block";
-        var toggleIcon = this.getElementsByClassName("faq-toggle")[0];
-        toggleIcon.classList.remove("fa-chevron-down");
-        toggleIcon.classList.add("fa-chevron-up");
-      }
-    });
-  }
+menuClose.addEventListener('click', function () {
+  mobileMenu.classList.remove('addactive');
+  mobileMenu.classList.add('nonactive');
 });
 
 /***/ }),

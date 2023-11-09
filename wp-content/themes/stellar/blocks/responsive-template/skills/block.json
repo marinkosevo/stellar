@@ -1,13 +1,13 @@
 {
-    "name": "stellar/skill-section",
-    "title": "No Name Section",
+    "name": "stellar/skills-section",
+    "title": "Responsive Skills Section",
     "description": "A custom testimonial block that uses ACF fields.",
     "category": "formatting",
     "icon": "admin-comments",
-    "keywords": ["skill", "section"],
+    "keywords": ["skills", "section"],
     "acf": {
         "mode": "preview",
-        "renderTemplate": "skill-section.php"
+        "renderTemplate": "skills.php"
     },
     "supports": {
         "anchor": true

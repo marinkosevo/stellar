@@ -1,13 +1,13 @@
 {
-    "name": "stellar/skill-section",
-    "title": "No Name Section",
+    "name": "stellar/about-me",
+    "title": "About Me",
     "description": "A custom testimonial block that uses ACF fields.",
     "category": "formatting",
     "icon": "admin-comments",
-    "keywords": ["skill", "section"],
+    "keywords": ["about", "me"],
     "acf": {
         "mode": "preview",
-        "renderTemplate": "skill-section.php"
+        "renderTemplate": "about.php"
     },
     "supports": {
         "anchor": true

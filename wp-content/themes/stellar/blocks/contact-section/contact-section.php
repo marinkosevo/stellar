@@ -7,8 +7,8 @@ $inputs = $right_side['input'];
 
 if ($heading):
     ?>
-    <div class="pt-[42px] px-[24px] text-center md:text-left pb-[86px] max-w-[1280px] mx-auto flex flex-col gap-[24px]">
-        <h1 class="text-[32px]  font-semibold"> 
+    <div class="pt-[42px] px-[24px] pb-[86px] max-w-[1280px] mx-auto flex flex-col gap-[24px]">
+        <h1 class="text-[32px] text-center md:text-left font-semibold"> 
             <?= $heading ?>
         </h1>
     <?php endif;
@@ -23,7 +23,7 @@ if ($left_side): ?>
                         <?php
                         foreach ($socials as $social):
                             ?>
-                            <img class='w-[36px] h-[36px] object-scale-down'onclick="location.href= '<?= $social['link'] ?>'" src="<?= $social['image']['url'] ?>" alt="">
+                            <img class='w-[36px] h-[36px] object-cover'onclick="location.href= '<?= $social['link'] ?>'" src="<?= $social['image']['url'] ?>" alt="">
                             </img>
                         <?php endforeach; ?>
                     </div>

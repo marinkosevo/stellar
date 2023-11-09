@@ -1,21 +1,42 @@
-import Swiper from 'swiper/bundle';
+const checkbox = document.getElementById("checkbox");
 
-// import styles bundle
-import 'swiper/css/bundle';
+function applyTheme() {
+  if (typeof window !== "undefined") {
+    if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      document.documentElement.classList.add("dark");
+      checkbox.checked = true;
+    } else {
+      document.documentElement.classList.remove("dark");
+      checkbox.checked = false;
+    }
+  }
+}
 
-
-  var mobileMenu = document.getElementById('mobile-menu')
-  var menuToggleButton = document.getElementById('menu-toggle-button');
-  var menuClose = document.getElementById('close-menu')
-
-  menuToggleButton.addEventListener('click', function() {
-        mobileMenu.classList.remove('nonactive');
-        mobileMenu.classList.add('addactive');
-   
+checkbox.addEventListener("change", () => {
+  if (checkbox.checked) {
+    document.documentElement.classList.add("dark");
+    localStorage.setItem("theme", "dark");
+  } else {
+    document.documentElement.classList.remove("dark");
+    localStorage.setItem("theme", "light");
+  }
 });
-menuClose.addEventListener('click', function() {
-    mobileMenu.classList.remove('addactive');
-    mobileMenu.classList.add('nonactive');
-})
 
+applyTheme(); // Poziv funkcije za primjenu teme prilikom učitavanja stranice
+document.addEventListener("DOMContentLoaded", function () {
+  var mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+  var mobileMenu = document.getElementById('mobile-menu');
+  var mobileMenuClose = document.getElementById('mobile-menu-close');  // Dodaj novi gumb za zatvaranje
 
+  mobileMenuToggle.addEventListener('click', function () {
+      mobileMenu.classList.toggle('hidden');
+  });
+
+  mobileMenuClose.addEventListener('click', function () {
+      mobileMenu.classList.add('hidden');
+  });
+});

@@ -1228,6 +1228,9 @@ video {
 .gap-\[8px\]{
   gap: 8px;
 }
+.gap-0{
+  gap: 0px;
+}
 .gap-y-\[144px\]{
   row-gap: 144px;
 }

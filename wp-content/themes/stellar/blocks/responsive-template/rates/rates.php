@@ -8,7 +8,7 @@ $work = get_field('work');
     <div
         class="lg:max-w-[1530px] flex flex-col md:flex-row gap-y-[144px] justify-between md:justify-between mx-auto bg-[#F6FFF6] dark:bg-[#000] px-[50px] py-[82px] border dark:border-[#646464]  rounded-[30px]">
         <?php if ($job): ?>
-            <div class="text-center flex flex-col gap-[21px] w-fit">
+            <div class="text-center flex flex-col gap-[21px] overflow-x-scroll">
                 <h1 class="text-[#83E281] dark:text-[#C8FEC7] text-[64px]">
                     <?= $job['heading'] ?>
                 </h1>
@@ -20,7 +20,7 @@ $work = get_field('work');
         <img class='hidden lg:flex object-contain' src="<?= get_template_directory_uri() . '/assets/images/Dawn.png' ?>"
             alt="">
         <?php if ($duplicates): ?>
-            <div class="text-center flex flex-col gap-[21px] w-fit">
+            <div class="text-center flex flex-col gap-[21px] overflow-x-scroll">
                 <h1 class="text-[#83E281] dark:text-[#C8FEC7] text-[64px]">
                     <?= $duplicates['heading'] ?>
 
@@ -34,7 +34,7 @@ $work = get_field('work');
         <img class='hidden lg:flex object-contain' src="<?= get_template_directory_uri() . '/assets/images/Dawn.png' ?>"
             alt="">
         <?php if ($work): ?>
-            <div class="text-center flex flex-col gap-[21px] w-fit">
+            <div class="text-center flex flex-col gap-[21px] overflow-x-scroll">
                 <h1 class="text-[#83E281] dark:text-[#C8FEC7] text-[64px]">
                     <?= $work['heading'] ?>
 

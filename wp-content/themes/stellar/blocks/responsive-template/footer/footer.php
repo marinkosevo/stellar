@@ -1,5 +1,5 @@
-<div class="flex flex-col mx-auto text-center max-w-[386px] md:max-w-[864px] md:max-w-[1530px] bg-[#292929] px-[22px] md:px-[80px] lg:px-[100px] pb-[42px]">
-    <div class="h-[112px] bg-[#A87FF3] mt-[-45px] rounded-[15px] relative flex flex-row mb-[51px]">
+<div class="flex flex-col mx-auto text-center lg:max-w-[1530px] bg-[#292929] px-[24px] md:px-[80px] lg:px-[96px] pb-[44px] gap-[48px]">
+    <div class="h-[112px] bg-[#A87FF3] mt-[-48px] rounded-[16px] relative flex flex-row mb-[48px]">
         <img class='object-contain ml-[-30px]' src="<?= get_template_directory_uri() . '/assets/images/covik.png' ?>"
             alt="">
 
@@ -31,7 +31,7 @@
             </defs>
         </svg>
     </div>
-    <div class="flex flex-col md:flex-row justify-between w-full gap-[40px] pb-[30px] border-b-2 border-white">
+    <div class="flex flex-col md:flex-row justify-between w-full gap-[40px] pb-[30px]  border-b-2 border-white">
         <img class='mx-auto md:m-0' src="<?= get_template_directory_uri() . '/assets/images/svduje.png' ?>" alt="">
         <nav class="[&_ul]:flex [&_ul]:flex-row [&_ul]:mx-auto [&_ul]:justify-between md:[&_ul]:gap-[30px] text-white">
             <?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>

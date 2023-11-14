@@ -4,7 +4,7 @@ $skills = get_field('skills');
 ?>
 <div class="bg-white dark:bg-[#000] pb-[140px] md:pb-[200px]">
     <div
-        class='max-w-[386px] md:max-w-[864px] lg:max-w-[1530px] mx-auto  px-[22px] md:px-[80px] lg:px-[100px]'>
+        class='lg:max-w-[1530px] mx-auto px-[22px] md:px-[80px] lg:px-[100px]'>
         <h1 class="font-[Anton] text-[64px] text-[#292929] uppercase pb-[50px] dark:text-white">
             <?= $heading ?>
         </h1>

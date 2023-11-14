@@ -1,41 +1,52 @@
 <?php
-$benefits = get_field('benefit');
-if ($benefits):
-    ?>
-    <div class="bg-white dark:bg-[#000] py-[78px] md:py-[236px] lg:py-[144px] px-[22px] md:px-[80px] lg:px-[100px]">
-        <div
-            class="max-w-[386px] md:max-w-[864px] lg:max-w-[1530px] flex flex-col md:flex-row gap-y-[144px] justify-between md:justify-between mx-auto bg-[#F6FFF6] dark:bg-[#000] px-[50px] py-[82px] border dark:border-[#646464]  rounded-[30px]">
+$job = get_field('job');
+$duplicates = get_field('duplicates');
+$work = get_field('work');
 
-            <div class="text-center flex flex-col gap-[21px]">
+?>
+<div class="bg-white dark:bg-[#000] py-[78px] md:py-[236px] lg:py-[144px] px-[22px] md:px-[80px] lg:px-[100px]">
+    <div
+        class="lg:max-w-[1530px] flex flex-col md:flex-row gap-y-[144px] justify-between md:justify-between mx-auto bg-[#F6FFF6] dark:bg-[#000] px-[50px] py-[82px] border dark:border-[#646464]  rounded-[30px]">
+        <?php if ($job): ?>
+            <div class="text-center flex flex-col gap-[21px] w-fit">
                 <h1 class="text-[#83E281] dark:text-[#C8FEC7] text-[64px]">
-                    Naslov
+                    <?= $job['heading'] ?>
                 </h1>
                 <h2 class="text-[#83E281] dark:text-[#C8FEC7] text-[22px]">
-                    Podnaslov
+                    <?= $job['subheading'] ?>
                 </h2>
             </div>
-            <img class='hidden lg:flex object-contain'src="<?= get_template_directory_uri() . '/assets/images/Dawn.png' ?>" alt="">
-            <div class="text-center flex flex-col gap-[21px]">
+        <?php endif; ?>
+        <img class='hidden lg:flex object-contain' src="<?= get_template_directory_uri() . '/assets/images/Dawn.png' ?>"
+            alt="">
+        <?php if ($duplicates): ?>
+            <div class="text-center flex flex-col gap-[21px] w-fit">
                 <h1 class="text-[#83E281] dark:text-[#C8FEC7] text-[64px]">
-                    Naslov
+                    <?= $duplicates['heading'] ?>
+
                 </h1>
                 <h2 class="text-[#83E281] dark:text-[#C8FEC7] text-[22px]">
-                    Podnaslov
+                    <?= $duplicates['subheading'] ?>
+
                 </h2>
             </div>
-            <img class='hidden lg:flex object-contain' src="<?= get_template_directory_uri() . '/assets/images/Dawn.png' ?>" alt="">
-
-            <div class="text-center flex flex-col gap-[21px]">
+        <?php endif; ?>
+        <img class='hidden lg:flex object-contain' src="<?= get_template_directory_uri() . '/assets/images/Dawn.png' ?>"
+            alt="">
+        <?php if ($work): ?>
+            <div class="text-center flex flex-col gap-[21px] w-fit">
                 <h1 class="text-[#83E281] dark:text-[#C8FEC7] text-[64px]">
-                    Naslov
+                    <?= $work['heading'] ?>
+
                 </h1>
                 <h2 class="text-[#83E281] dark:text-[#C8FEC7] text-[22px]">
-                    Podnaslov
+                    <?= $work['subheading'] ?>
+
                 </h2>
             </div>
+        <?php endif; ?>
 
 
 
-        </div>
     </div>
-<?php endif; ?>
+</div>

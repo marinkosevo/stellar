@@ -3,7 +3,7 @@ $heading = get_field('heading');
 $portfolio = get_field('portfolio');
 ?>
 <div class="bg-white dark:bg-[#000] px-[22px] md:px-[80px] lg:px-[100px] pb-[200px]">
-    <div class="max-w-[386px] md:max-w-[864px] lg:max-w-[1530px] mx-auto flex flex-col gap-[36px]">
+    <div class="lg:max-w-[1530px] mx-auto flex flex-col gap-[36px]">
         <?php if ($heading): ?>
             <h1 class="text-[#000] font-['Anton'] dark:text-white text-[64px] uppercase">
                 <?= $heading ?>
@@ -30,9 +30,10 @@ $portfolio = get_field('portfolio');
                                 </div>
                             <?php endif; ?>
                         </div>
-                        <button class="bg-[#292929] text-white font-thin py-[12px] px-[24px]">
-                            <?= $project['button'] ?>
-                        </button>
+                        <a href="<?= $project['button']['url'] ?>">
+                            <button class="bg-[#292929] w-full text-white font-thin py-[12px] px-[24px]">
+                                <?= $project['button']['title'] ?>
+                                    </button></a>
                     </div>
                 <?php endforeach; endif; ?>
         </div>

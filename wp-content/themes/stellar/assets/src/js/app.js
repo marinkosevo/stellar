@@ -26,11 +26,12 @@ checkbox.addEventListener("change", () => {
   }
 });
 
-applyTheme(); // Poziv funkcije za primjenu teme prilikom učitavanja stranice
+applyTheme(); 
 document.addEventListener("DOMContentLoaded", function () {
+  var checkbox = document.getElementById('checkbox');
   var mobileMenuToggle = document.getElementById('mobile-menu-toggle');
   var mobileMenu = document.getElementById('mobile-menu');
-  var mobileMenuClose = document.getElementById('mobile-menu-close');  // Dodaj novi gumb za zatvaranje
+  var mobileMenuClose = document.getElementById('mobile-menu-close');
 
   mobileMenuToggle.addEventListener('click', function () {
       mobileMenu.classList.toggle('hidden');
@@ -38,5 +39,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   mobileMenuClose.addEventListener('click', function () {
       mobileMenu.classList.add('hidden');
+  });
+
+  checkbox.addEventListener('change', function () {
+      if (checkbox.checked) {
+          document.body.classList.add('dark-mode');
+      } else {
+          document.body.classList.remove('dark-mode');
+      }
   });
 });

@@ -82,8 +82,34 @@
                     "sub_fields": [
                         {
                             "key": "field_6546351cf3b2b",
-                            "label": "Icon",
-                            "name": "icon",
+                            "label": "Icon Light",
+                            "name": "icon_light",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "preview_size": "medium",
+                            "parent_repeater": "field_654634f3f3b2a"
+                        },
+                        {
+                            "key": "field_655325971c4ac",
+                            "label": "Icon Dark",
+                            "name": "icon_dark",
                             "aria-label": "",
                             "type": "image",
                             "instructions": "",
@@ -111,7 +137,7 @@
                             "label": "Link",
                             "name": "link",
                             "aria-label": "",
-                            "type": "url",
+                            "type": "link",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -120,8 +146,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "",
-                            "placeholder": "",
+                            "return_format": "array",
                             "parent_repeater": "field_654634f3f3b2a"
                         }
                     ]
@@ -172,5 +197,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1699107472
+    "modified": 1699950093
 }

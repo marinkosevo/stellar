@@ -12,9 +12,9 @@
 
 <body>
 
-    <header>
+    <header class="bg-white dark:bg-[#000]">
         <div
-            class="max-w-[1530px] mx-auto px-[22px] md:px-[100px] pt-[50px] pb-[30px] justify-between  flex flex-row bg-white dark:bg-[#000] text-black dark:text-white">
+            class="max-w-[1530px] mx-auto px-[22px] md:px-[100px] pt-[50px] pb-[30px] justify-between  flex flex-row  text-black dark:text-white">
             <div>
                 <div class="inline">
                     <svg class='inline' xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28"
@@ -51,22 +51,16 @@
                                 stroke-linecap="round" />
                         </svg>
                     </div>
-                    <div id="mobile-menu" class="hidden fixed inset-0 bg-white dark:text-white dark:bg-black z-50 overflow-auto ">
+                    <div id="mobile-menu"
+                        class="hidden fixed inset-0 bg-white dark:text-white dark:bg-black z-50 overflow-auto ">
 
-                    <nav
+                        <nav
                             class="flex flex-col mx-auto py-[100px] [&_div]:mx-auto text-center  text-[50px] font-[Anton] [&_ul]:flex [&_ul]:flex-col [&_ul]:gap-[30px] ">
 
                             <?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
                             <div class="flex flex-col py-[40px] gap-[30px]">
                                 <button> Contact Me</button>
-                                <div class="text-sm">
-                                    <input type="checkbox" class="checkbox" id="checkbox">
-                                    <label for="checkbox" class="checkbox-label">
-                                        <i class="fas fa-moon"></i>
-                                        <i class="fas fa-sun"></i>
-                                        <span class="ball"></span>
-                                    </label>
-                                </div>
+
 
                             </div>
                             <button id="mobile-menu-close" class="text-[30px]">X</button>

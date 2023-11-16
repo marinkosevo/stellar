@@ -16,9 +16,11 @@ $portfolio = get_field('portfolio');
                     <div class="flex flex-col gap-[23px] p-[30px] border border-black dark:border-white rounded-[10px]">
                         <img class="h-[200px] object-cover" src="<?= $project['image']['url'] ?>" alt="">
                         <div class="flex flex-col gap-[21px]">
-                            <h1 class="text-[28px] font-['Gotham'] font-bold text-black dark:text-white">
-                                <?= $project['heading'] ?>
-                            </h1>
+                            <?php if ($project['tags']): ?>
+                                <h1 class="text-[28px] font-['Gotham'] font-bold text-black dark:text-white">
+                                    <?= $project['heading'] ?>
+                                </h1>
+                            <?php endif; ?>
                             <?php if ($project['tags']): ?>
                                 <div class="flex flex-row gap-[5px]">
                                     <?php foreach ($project['tags'] as $tag): ?>
@@ -30,12 +32,16 @@ $portfolio = get_field('portfolio');
                                 </div>
                             <?php endif; ?>
                         </div>
-                        <a href="<?= $project['button']['url'] ?>">
-                            <button class="bg-[#292929] w-full text-white font-thin py-[12px] px-[24px]">
-                                <?= $project['button']['title'] ?>
-                                    </button></a>
+                        <?php if ($project['button']): ?>
+                            <a href="<?= $project['button']['url'] ?>">
+                                <button class="bg-[#292929] w-full text-white font-thin py-[12px] px-[24px]">
+                                    <?= $project['button']['title'] ?>
+                                </button>
+                            </a>
+                        <?php endif; ?>
                     </div>
-                <?php endforeach; endif; ?>
+                <?php endforeach;
+            endif; ?>
         </div>
     </div>
 </div>

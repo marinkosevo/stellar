@@ -10,7 +10,7 @@ $socials = $left['social'];
             <div class="max-w-[370px] md:max-w-[660px]">
                 <?php if ($left['heading']): ?>
                     <h1
-                        class="text-[#292929] dark:text-white text-center text-[110px] md:text-[200px] leading-[99%] tracking-[-3.3px] mb-[10px]">
+                        class="text-[#292929] font-[Gotham] dark:text-white text-center text-[110px] md:text-[200px] leading-[99%] tracking-[-3.3px] mb-[10px]">
                         <?= $left['heading'] ?>
                     </h1>
                 <?php endif; ?>

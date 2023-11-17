@@ -724,12 +724,12 @@ video {
 .h-\[200px\]{
   height: 200px;
 }
+.h-\[40px\]{
+  height: 40px;
+}
 .h-fit{
   height: -moz-fit-content;
   height: fit-content;
-}
-.h-\[40px\]{
-  height: 40px;
 }
 .max-h-\[500px\]{
   max-height: 500px;
@@ -752,6 +752,9 @@ video {
 .w-\[160px\]{
   width: 160px;
 }
+.w-\[40px\]{
+  width: 40px;
+}
 .w-\[43\%\]{
   width: 43%;
 }
@@ -764,9 +767,6 @@ video {
 }
 .w-full{
   width: 100%;
-}
-.w-\[40px\]{
-  width: 40px;
 }
 .max-w-\[1280px\]{
   max-width: 1280px;
@@ -2098,6 +2098,9 @@ video {
 .text-\[110px\]{
   font-size: 110px;
 }
+.text-\[12px\]{
+  font-size: 12px;
+}
 .text-\[14px\]{
   font-size: 14px;
 }
@@ -2662,131 +2665,6 @@ video {
   transform: translateX(24px);
 }
 
-/*
-header {
-    position: sticky;
-    width: 100%;
-    top: 0;
-}
-
-.header {
-    display: flex;
-    height: 100px;
-    margin: 0 auto;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    background-color: $primary-color;
-    padding:20px 30px;
-    justify-content: space-around;
-    @include sticky;
-
-    @include desktop {
-        justify-content: space-evenly;
-    }
-
-    &__wrapper {
-        width: 100%; 
-        max-width: 1280px;
-        display: flex;
-        justify-content: space-between; 
-        align-items: center; 
-    }
-    &__logo {
-        width: 50%;
-        display: inline-flex;
-        justify-content: flex-start;
-        z-index: 3;
-
-        @include desktop {
-            display: block;
-            width: auto;
-            margin: auto 0;
-        }
-
-        img {
-            width: 150px;
-        }
-
-    }
-
-    &__nav {
-        width: 60%;
-        margin: auto 0;
-        display: none;
-
-        @include desktop {
-            display: inline-flex;
-
-            .nav-menu {
-                display: flex;
-                list-style: none;
-                box-sizing: inherit;
-
-
-                ul {
-                    display: inline-flex;
-                    list-style-type: none;
-                    align-items: flex-start;
-
-                    gap: 34.241px;
-
-                    li {
-                        cursor: pointer;
-                        a {
-                            @include navtext;
-                        }
-
-                    }
-                }
-
-
-            }
-
-        }
-    }
-
-    &__right-side {
-        display: none;
-
-        @include desktop {
-
-            display: inline-flex;
-            color: black;
-            display: inline-flex;
-            padding-left: 0px;
-            justify-content: flex-end;
-            align-items: center;
-        }
-
-        a {
-            display: block;
-            margin: auto;
-            @include navtext;
-
-        }
-
-        .try_button {
-            margin-left: 2em;
-            border-radius: 8px;
-            border: 1px solid #FFF;
-            background: #06F;
-            padding: 9px 17px;
-            @include buttontext
-        }
-    }
-
-    &__show-mobile {
-        display: inline-flex;
-        margin: auto 0;
-        z-index: 3;
-
-        @include desktop {
-            display: none;
-        }
-    }
-}
-*/
 @keyframes slideDown {
   to {
     transform: translateY(0);
@@ -2914,30 +2792,30 @@ header {
 
 @font-face {
   font-family: "Anton";
-  src: local(""), url("../assets/fonts/Anton-Regular.ttf") format("truetype");
+  src: local(""), url("../assets/fonts/Anton-Regular.ttf") format("truetype"); /* Chrome 26+, Opera 23+, Firefox 39+ */
 }
 @font-face {
   font-family: "Gotham";
-  src: local(""), url("../assets/fonts/GothamMedium.ttf") format("truetype"); /* Chrome 26+, Opera 23+, Firefox 39+ */
-  font-weight: normal;
+  font-weight: 400;
+  font-style: normal;
+  src: local(""), url("../assets/fonts/Gotham-Medium.otf") format("opentype"); /* Chrome 26+, Opera 23+, Firefox 39+ */
+}
+@font-face {
+  font-family: "Gotham";
+  src: local(""), url("../assets/fonts/Gotham-Black.otf") format("opentype"); /* Chrome 26+, Opera 23+, Firefox 39+ */
+  font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Gotham";
-  src: local(""), url("../assets/fonts/Gotham-Black.ttf") format("truetype"); /* Chrome 26+, Opera 23+, Firefox 39+ */
-  font-weight: bolder;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gotham";
-  src: local(""), url("../assets/fonts/Gotham-Bold.ttf") format("truetype"); /* Chrome 26+, Opera 23+, Firefox 39+ */
-  font-weight: bold;
+  src: local(""), url("../assets/fonts/Gotham-Bold.otf") format("opentype"); /* Chrome 26+, Opera 23+, Firefox 39+ */
+  font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "Gotham";
   src: local(""), url("../assets/fonts/GothamBook.ttf") format("truetype"); /* Chrome 26+, Opera 23+, Firefox 39+ */
-  font-weight: thin;
+  font-weight: 100;
   font-style: normal;
 }
 @font-face {

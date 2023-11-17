@@ -13,9 +13,9 @@
 .checkbox {
     opacity: 0;
     position: absolute;
-  }
-  
-  .checkbox-label {
+}
+
+.checkbox-label {
     width: 50px;
     height: 26px;
     border-radius: 50px;
@@ -25,16 +25,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border:1px solid gray;
+    border: 1px solid gray;
+}
+.fa-moon {
+    color: #f39c12;
+}
 
-  }
-  
-  
-  .fa-moon {color: #f39c12;}
-  
-  .fa-sun {color: #f39c12;}
-  
-  .checkbox-label .ball {
+.fa-sun {
+    color: #f39c12;
+}
+
+.checkbox-label .ball {
     background-color: #fff;
     width: 22px;
     height: 22px;
@@ -43,139 +44,9 @@
     top: 2px;
     border-radius: 50%;
     transition: transform 0.2s linear;
-  }
-  
-  .checkbox:checked ~ .checkbox-label .ball {
+}
+
+.checkbox:checked ~ .checkbox-label .ball {
     transform: translateX(24px);
-  }
-  
-
-
-
-
-
-/*
-header {
-    position: sticky;
-    width: 100%;
-    top: 0;
 }
 
-.header {
-    display: flex;
-    height: 100px;
-    margin: 0 auto;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    background-color: $primary-color;
-    padding:20px 30px;
-    justify-content: space-around;
-    @include sticky;
-
-    @include desktop {
-        justify-content: space-evenly;
-    }
-
-    &__wrapper {
-        width: 100%; 
-        max-width: 1280px;
-        display: flex;
-        justify-content: space-between; 
-        align-items: center; 
-    }
-    &__logo {
-        width: 50%;
-        display: inline-flex;
-        justify-content: flex-start;
-        z-index: 3;
-
-        @include desktop {
-            display: block;
-            width: auto;
-            margin: auto 0;
-        }
-
-        img {
-            width: 150px;
-        }
-
-    }
-
-    &__nav {
-        width: 60%;
-        margin: auto 0;
-        display: none;
-
-        @include desktop {
-            display: inline-flex;
-
-            .nav-menu {
-                display: flex;
-                list-style: none;
-                box-sizing: inherit;
-
-
-                ul {
-                    display: inline-flex;
-                    list-style-type: none;
-                    align-items: flex-start;
-
-                    gap: 34.241px;
-
-                    li {
-                        cursor: pointer;
-                        a {
-                            @include navtext;
-                        }
-
-                    }
-                }
-
-
-            }
-            
-        }
-    }
-
-    &__right-side {
-        display: none;
-
-        @include desktop {
-
-            display: inline-flex;
-            color: black;
-            display: inline-flex;
-            padding-left: 0px;
-            justify-content: flex-end;
-            align-items: center;
-        }
-
-        a {
-            display: block;
-            margin: auto;
-            @include navtext;
-
-        }
-
-        .try_button {
-            margin-left: 2em;
-            border-radius: 8px;
-            border: 1px solid #FFF;
-            background: #06F;
-            padding: 9px 17px;
-            @include buttontext
-        }
-    }
-
-    &__show-mobile {
-        display: inline-flex;
-        margin: auto 0;
-        z-index: 3;
-
-        @include desktop {
-            display: none;
-        }
-    }
-}
-*/

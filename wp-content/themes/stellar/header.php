@@ -11,7 +11,6 @@
 </head>
 
 <body>
-
     <header class="bg-white dark:bg-[#000]">
         <div
             class="max-w-[1530px] mx-auto px-[22px] md:px-[100px] pt-[50px] pb-[30px] justify-between  flex flex-row  text-black dark:text-white">
@@ -31,17 +30,15 @@
                     </svg>
                 </div>
                 <span class="font-[Poppins] font-[700] text-[20px]">tian</span>
-
             </div>
             <div class="hidden md:flex">
                 <nav class="flex flex-col [&_ul]:flex [&_ul]:justify-between [&_ul]:gap-[30px]">
                     <?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
                 </nav>
             </div>
-
             <div>
                 <div class="md:hidden">
-                    <div id='mobile-menu-toggle' class="z-50">
+                    <div id='mobile-menu-open' class="z-50">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                             <path class="dark:stroke-white" d="M5 11.6667H35" stroke="#292929" stroke-width="2.5"
                                 stroke-linecap="round" />
@@ -52,24 +49,25 @@
                         </svg>
                     </div>
                     <div id="mobile-menu"
-                        class="hidden fixed inset-0 bg-white dark:text-white dark:bg-black z-50 overflow-auto ">
-
+                        class="hidden fixed inset-0 bg-white dark:text-white dark:bg-black z-50 overflow-auto">
                         <nav
                             class="flex flex-col mx-auto py-[100px] [&_div]:mx-auto text-center  text-[50px] font-[Anton] [&_ul]:flex [&_ul]:flex-col [&_ul]:gap-[30px] ">
-
                             <?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
                             <div class="flex flex-col py-[40px] gap-[30px]">
                                 <button> Contact Me</button>
-
-
+                                <div class="text-[12px]">
+                                    <input type="checkbox" class="checkbox" id="checkbox">
+                                    <label for="checkbox" class="checkbox-label">
+                                        <i class="fas fa-moon"></i>
+                                        <i class="fas fa-sun"></i>
+                                        <span class="ball"></span>
+                                    </label>
+                                </div>
                             </div>
                             <button id="mobile-menu-close" class="text-[30px]">X</button>
-
                         </nav>
-
                     </div>
                 </div>
-
                 <div class="hidden md:flex flex-row gap-[20px]">
                     <button> Contact Me</button>
                     <div>
@@ -80,12 +78,7 @@
                             <span class="ball"></span>
                         </label>
                     </div>
-
                 </div>
             </div>
-
         </div>
-
-
-
     </header>

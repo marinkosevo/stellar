@@ -1,4 +1,4 @@
-const switchers = document.querySelectorAll("#checkbox");
+const switchers = document.querySelectorAll(".checkbox");
 const mobile_open = document.getElementById("mobile-menu-open");
 const mobile_close = document.getElementById("mobile-menu-close");
 const mobile_menu = document.getElementById("mobile-menu");
@@ -17,14 +17,18 @@ function applyTheme() {
         window.matchMedia("(prefers-color-scheme: dark)").matches)
     ) {
       document.documentElement.classList.add("dark");
-      checkbox.checked = true;
+      switchers.forEach( switcher => {
+        switcher.checked = true;
+      })
     } else {
       document.documentElement.classList.remove("dark");
-      checkbox.checked = false;
+      switchers.forEach( switcher => {
+        switcher.checked = false;
+      })
     }
   }
 }
-for (const switcher of switchers) {
+switchers.forEach( switcher => {
   switcher.addEventListener("change", () => {
     if (switcher.checked) {
       document.documentElement.classList.add("dark");
@@ -34,6 +38,6 @@ for (const switcher of switchers) {
       localStorage.setItem("theme", "light");
     }
   });
-}
+})
 
 applyTheme();

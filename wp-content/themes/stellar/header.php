@@ -56,8 +56,8 @@
                             <div class="flex flex-col py-[40px] gap-[30px]">
                                 <button> Contact Me</button>
                                 <div class="text-[12px]">
-                                    <input type="checkbox" class="checkbox" id="checkbox">
-                                    <label for="checkbox" class="checkbox-label">
+                                    <input type="checkbox" class="checkbox" id="checkbox_mob">
+                                    <label for="checkbox_mob" class="checkbox-label">
                                         <i class="fas fa-moon"></i>
                                         <i class="fas fa-sun"></i>
                                         <span class="ball"></span>

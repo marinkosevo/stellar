@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Anton';
+    src: local(''), url('../assets/fonts/Anton-Regular.ttf') format('truetype'), ; /* Chrome 26+, Opera 23+, Firefox 39+ */
+}
+@font-face {
+    font-family: 'Gotham';
+    font-weight: 400;
+    font-style: normal;
+    src: local(''), url('../assets/fonts/Gotham-Medium.otf') format('opentype'); /* Chrome 26+, Opera 23+, Firefox 39+ */
+}
+@font-face {
+    font-family: 'Gotham';
+    src: local(''), url('../assets/fonts/Gotham-Black.otf') format('opentype'); /* Chrome 26+, Opera 23+, Firefox 39+ */
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham';
+    src: local(''), url('../assets/fonts/Gotham-Bold.otf') format('opentype'); /* Chrome 26+, Opera 23+, Firefox 39+ */
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham';
+    src: local(''), url('../assets/fonts/GothamBook.ttf') format('truetype'); /* Chrome 26+, Opera 23+, Firefox 39+ */
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: local(''), url('../assets/fonts/Poppins-Bold.ttf') format('truetype'); /* Chrome 26+, Opera 23+, Firefox 39+ */
+    font-weight: bold;
+    font-style: normal;
+}
+

@@ -5,7 +5,7 @@ $reviews = get_field('reviews');
 ?>
 <div class="bg-secondary px-[20px] py-[48px] md:py-[80px] lg:py-[120px] md:px-[40px] relative">
     <div class="max-w-[1216px] mx-auto">
-        <img class="absolute opacity-30" src="<?= get_template_directory_uri() . '/assets/images/ap.png' ?>" alt="">
+        <img class="absolute lg:left-[112px] md:left-[20px] top-[48px] left-[12px] md:top-[64px] opacity-30" src="<?= get_template_directory_uri() . '/assets/images/ap.png' ?>" alt="">
         <div class=" flex flex-col gap-[32px] lg:grid lg:grid-cols-2">
             <div class="flex flex-col gap-[8px]">
                 <?php if ($heading): ?>

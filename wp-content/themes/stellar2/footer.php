@@ -2,7 +2,7 @@
 $curYear = date('Y');
 wp_footer() ?>
 <div class="bg-black px-[20px] md:px-[40px] py-[40px] md:py-[64px]">
-    <div class="max-w-[1216px] mx-auto flex flex-row justify-between">
+    <div class="max-w-[1216px] mx-auto flex flex-col md:flex-row justify-between">
         <div class="flex flex-col text-white gap-[24px]">
             <img class="h-[32px] object-contain object-left"
                 src="<?= get_template_directory_uri() . '/assets/images/Logo.png' ?>" alt="">

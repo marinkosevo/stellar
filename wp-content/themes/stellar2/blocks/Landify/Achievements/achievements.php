@@ -7,12 +7,12 @@ $achievements = get_field('achievements');
     <div class="max-w-[1216px] mx-auto flex flex-col lg:flex-row gap-[48px] justify-between">
         <div class="flex flex-col flex-1 gap-[8px]">
             <?php if ($heading): ?>
-                <h1 class="text-[30px] md:text-lg lg:text-xl text-dark font-['Inter-Black']">
+                <h1 class="text-[30px] md:text-lg lg:text-xl text-dark font-sans">
                     <?= $heading ?>
                 </h1>
             <?php endif; ?>
             <?php if ($desc): ?>
-                <p class="text-sm text-dark font-['Inter-Regular']">
+                <p class="text-sm text-dark font-sans">
                     <?= $desc ?>
                 </p>
             <?php endif; ?>
@@ -31,7 +31,7 @@ $achievements = get_field('achievements');
                                 </h1>
                             <?php endif; ?>
                             <?php if ($achievement['description']): ?>
-                                <p class="text-sm font-['Inter-Regular']">
+                                <p class="text-sm font-sans">
                                     <?= $achievement['description'] ?>
                                 </p>
                             <?php endif; ?>

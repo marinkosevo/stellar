@@ -1,14 +1,9 @@
 <?php
 $left_side = get_field('left_side');
-$heading = $left_side['heading'];
-$desc = $left_side['description'];
-$left_button = $left_side['left_button'];
-$right_button = $left_side['right_button'];
-$icon = $left_side['icon'];
 $image = get_field('image');
 ?>
 
-<div class="font-[Inter-Regular] px-[20px] md:px-[40px] relative">
+<div class="font-sans px-[20px] md:px-[40px] relative">
 
 
     <div class="flex flex-col lg:flex-row mx-auto max-w-[1216px] ">
@@ -19,31 +14,31 @@ $image = get_field('image');
         </div>
         <?php if ($left_side): ?>
             <div class="py-[40px] lg:pt-[96px] lg:pr-[48px]">
-                <?php if ($heading): ?>
+                <?php if ($left_side['heading']): ?>
                     <h1 class="mb-[16px] text-lg md:text-xl lg:text-xl2 font-[Inter-Black]">
-                        <?= $heading ?>
+                        <?= $left_side['heading'] ?>
                     </h1>
                 <?php endif;
-                if ($desc):
+                if ($left_side['description']):
                     ?>
                     <p class="mb-[32px] text-base">
-                        <?= $desc ?>
+                        <?= $left_side['description'] ?>
                     </p>
                 <?php endif; ?>
                 <div class="flex flex-row gap-[16px]">
-                    <?php if ($left_button): ?>
-                        <a href="<?= $left_button['url'] ?>">
+                    <?php if ($left_side['left_button']): ?>
+                        <a href="<?= $left_side['left_button']['url'] ?>">
                             <button class="py-[16px] px-[24px] bg-primary rounded-[8px] font-[Inter-Bold] text-white text-sm">
-                                <?= $left_button['title'] ?>
+                                <?= $left_side['left_button']['title'] ?>
                             </button>
                         </a>
 
                     <?php endif;
-                    if ($right_button): ?>
-                        <a href="<?= $right_button['url'] ?>">
+                    if ($left_side['right_button']): ?>
+                        <a href="<?= $left_side['right_button']['url'] ?>">
                             <button class='py-[16px] px-[24px] font-[Inter-Bold] text-sm text-primary'><img
-                                    class='inline w-[24px] h-[24px]' src="<?= $icon['url'] ?>" alt="">
-                                <?= $right_button['title'] ?>
+                                    class='inline w-[24px] h-[24px]' src="<?= $left_side['icon']['url'] ?>" alt="">
+                                <?= $left_side['right_button']['title'] ?>
                             </button>
                         </a>
                     <?php endif; ?>

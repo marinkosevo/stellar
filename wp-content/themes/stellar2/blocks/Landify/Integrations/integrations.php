@@ -13,7 +13,7 @@ $partners = get_field('logo');
                 </h1>
             <?php endif; ?>
             <?php if ($desc): ?>
-                <p class="text-sm md:text-base font-['Inter-Regular']">
+                <p class="text-sm md:text-base font-sans">
                     <?= $desc ?>
                 </p>
             <?php endif; ?>

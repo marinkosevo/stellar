@@ -32,7 +32,7 @@ $benefits = get_field('benefits');
                             </h1>
                         <?php endif; ?>
                         <?php if ($benefit['description']): ?>
-                            <p class="text-sm font-[Inter-Regular] text-dark">
+                            <p class="text-sm font-sans text-dark">
                                 <?= $benefit['description'] ?>
                             </p>
                         <?php endif; ?>

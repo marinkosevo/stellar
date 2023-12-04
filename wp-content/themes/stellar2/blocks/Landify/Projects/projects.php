@@ -16,13 +16,13 @@ $ios = get_field('ios_link');
                     </h1>
                 <?php endif; ?>
                 <?php if ($desc): ?>
-                    <p class="text-sm md:text-md font-['Inter-Regular'] text-dark">
+                    <p class="text-sm md:text-md font-sans text-dark">
                         <?= $desc ?>
                     </p>
                 <?php endif; ?>
             </div>
             <div class="flex flex-col gap-[8px]">
-                <span>Get the app</span>
+                <span class="font-sans">Get the app</span>
                 <div class="flex flex-row gap-[12px]">
                     <?php if ($google): ?>
                         <a href="<?= $google['url'] ?>">

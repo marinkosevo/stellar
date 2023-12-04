@@ -14,7 +14,7 @@ $reviews = get_field('reviews');
                     </h1>
                 <?php endif; ?>
                 <?php if ($desc): ?>
-                    <p class="text-sm font-[Inter-Regular]">
+                    <p class="text-sm font-sans">
                         <?= $desc ?>
                     </p>
                 <?php endif; ?>
@@ -43,7 +43,7 @@ $reviews = get_field('reviews');
                                         </span>
                                     <?php endif; ?>
                                     <?php if ($review['role']): ?>
-                                        <span class="text-sm font-[Inter-Regular] text-[#6B7280] block">
+                                        <span class="text-sm font-sans text-[#6B7280] block">
                                             <?= $review['role'] ?>
                                         </span>
                                     <?php endif; ?>

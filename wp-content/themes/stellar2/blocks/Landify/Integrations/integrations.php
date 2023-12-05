@@ -4,16 +4,16 @@ $desc = get_field('description');
 $partners = get_field('logo');
 ?>
 <div class="px-[20px] md:px-[40px] py-[40px] md:py-[80] lg:py-[90px]">
-    <div class="flex flex-col md:flex-row gap-[16px] max-w-[1216px] mx-auto">
+    <div class="flex flex-col md:flex-row gap-[16px] max-w-[1216px] mx-auto border-t border-gray-50">
         <div class="flex flex-col flex-1 gap-[8px] md:gap-[32px]">
             <?php if ($heading): ?>
 
-                <h1 class="text-[30px] md:text-lg lg:text-xl font-['Inter-Black'] md:pt-[20px]">
+                <h1 class="text-[30px] md:text-lg lg:text-xl font-sans font-[700] md:pt-[20px]">
                     <?= $heading ?>
                 </h1>
             <?php endif; ?>
             <?php if ($desc): ?>
-                <p class="text-sm md:text-base font-sans">
+                <p class="text-sm md:text-base font-sans font-normal">
                     <?= $desc ?>
                 </p>
             <?php endif; ?>

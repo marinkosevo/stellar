@@ -7,7 +7,7 @@ $benefits = get_field('benefits');
     <div class="py-[96px] flex flex-col gap-[64px] max-w-[1216px] mx-auto">
         <div class="text-center gap-[8px]">
             <?php if ($heading): ?>
-                <h1 class="text-lg lg:text-xl font-['Inter-Black'] text-dark">
+                <h1 class="text-lg lg:text-xl font-sans font-[700] text-dark">
                     <?= $heading ?>
                 </h1>
             <?php endif; ?>
@@ -19,7 +19,7 @@ $benefits = get_field('benefits');
         </div>
         <?php if ($benefits): ?>
             <div
-                class="flex flex-col gap-[48px] md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-x-[30px] md:gap-y-[64px] text-center">
+                class="flex flex-col gap-[48px] md:gap-[64px] md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-x-[30px] md:gap-y-[64px] text-center">
                 <?php foreach ($benefits as $benefit): ?>
                     <div class="mx-auto">
                         <?php if ($benefit['image']): ?>
@@ -27,7 +27,7 @@ $benefits = get_field('benefits');
                                 src="<?= $benefit['image']['url'] ?>" alt="">
                         <?php endif; ?>
                         <?php if ($benefit['heading']): ?>
-                            <h1 class="text-[30px] font-[Inter-Black] text-dark ">
+                            <h1 class="text-[30px] font-sans font-[700] text-dark ">
                                 <?= $benefit['heading'] ?>
                             </h1>
                         <?php endif; ?>

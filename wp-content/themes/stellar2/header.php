@@ -10,12 +10,12 @@
 </head>
 
 <body>
-    <div class="px-[20px] md:px-[40px] font-[Inter-Bold] text-[14px]">
+    <div class="px-[20px] md:px-[40px] font-sans font-bold text-[14px]">
         <div class="max-w-[1216px] mx-auto flex flex-row justify-between py-[24px]">
             <div class="flex flex-row gap-[32px] justify-evenly">
                 <img class='object-contain' src="<?= get_template_directory_uri() . '/assets/images/Logo.png' ?>"
                     alt="">
-                <nav class="py-[8px] pl-[40px] w-full [&_ul]:flex [&_ul]:flex-row [&_ul]:gap-[16px] hidden lg:flex">
+                <nav class="py-[8px] pl-[40px] w-full [&_ul]:flex [&_ul]:flex-row [&_ul]:gap-[16px] font-sans hidden lg:flex">
                     <?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
                 </nav>
             </div>

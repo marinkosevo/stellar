@@ -11,7 +11,7 @@ $ios = get_field('ios_link');
         <div class="flex flex-col gap-[48px] pt-[48px] md:pt-[80px] lg:py-[111px] pb-[32px] flex-1">
             <div class="">
                 <?php if ($heading): ?>
-                    <h1 class="text-[30px] md:text-lg lg:text-xl font-['Inter-Black'] text-dark">
+                    <h1 class="text-[30px] md:text-lg lg:text-xl font-sans font-[700] text-dark">
                         <?= $heading ?>
                     </h1>
                 <?php endif; ?>
